@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <Button
+        android:id="@+id/mondayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/day_button"
+        android:layout_weight="10"
+        android:tag="0"
+        android:text="Mon" />
+  <Button
+        android:id="@+id/tuesdayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/day_button"
+        android:paddingLeft="12dp"
+        android:layout_weight="10"
+        android:tag="1"
+        android:text="Tue" />
+  <Button
+        android:id="@+id/wednesdayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/day_button"
+        android:paddingLeft="2dp"
+        android:layout_weight="10"
+        android:tag="2"
+        android:text="Wed" />
+  <Button
+        android:id="@+id/thursdayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/day_button"
+        android:paddingLeft="2dp"
+        android:layout_weight="10"
+        android:tag="3"
+        android:text="Thu" />
+  <Button
+        android:id="@+id/fridayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/day_button"
+        android:paddingLeft="2dp"
+        android:layout_weight="10"
+        android:tag="4"
+        android:text="Fri" />
+  <Button
+        android:id="@+id/saturdayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/day_button"
+        android:paddingLeft="2dp"
+        android:layout_weight="10"
+        android:tag="5"
+        android:text="Sat" />
+    <Button
+        android:id="@+id/sundayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/day_button"
+        android:paddingLeft="2dp"
+        android:layout_weight="10"
+        android:tag="6"
+        android:text="Sun" />
+</LinearLayout>
