@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+       <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/tracking" />
+       <ToggleButton 
+         android:layout_alignParentRight="true"
+         android:id="@+id/toggle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textOn="@string/on"
+         android:textOff="@string/off"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical" 
+         android:layout_weight="1">
+         <ListView
+            android:id="@+id/timeSchedulesList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"> 
+         </ListView>
+    </LinearLayout> 
+    <com.ros.workandhome.activities.views.WHDayWeekView
+         android:id="@+id/weekDaysView"
+         android:layout_weight="3"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent">
+    </com.ros.workandhome.activities.views.WHDayWeekView>
+    <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical"
+         android:layout_weight="3" >
+    <Button
+            android:id="@+id/addTimeScheduleButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Add time schedule">
+    </Button>
+    </LinearLayout>
+</LinearLayout>
